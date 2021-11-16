@@ -1,0 +1,51 @@
+ul{
+  list-style-type:none;
+}
+
+.app{
+  display: flex;
+  .container{
+    width: 50%;
+    padding: 1.5rem;
+    .wrapper-container{
+      width: 80%;
+    }
+  }
+}
+
+
+.autocomplete_container{
+  width: 100%;
+  position: relative;
+  input{
+    width: 100%;
+    padding: 20px;
+  }
+  .menu-options{
+    margin: 0;
+    padding: 0;
+    border: 1px solid;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    width: 100%;
+    li{
+      font-size: 1rem;
+      padding: 1rem;
+      border-bottom: 1px solid;
+      cursor: pointer;
+      &:hover{
+        background: gray;
+        color: white;;
+      }
+    }
+  }
+  .no-result, .loading{
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid;
+  }
+}
